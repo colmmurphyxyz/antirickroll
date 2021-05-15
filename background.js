@@ -11,12 +11,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     console.log("tab updated");
     let newUrl = changeInfo.url;    // will be null if the Url of the tab hasn't changed
-    if (newUrl && newUrl.isRickRoll()) {
-        // chrome.scripting.executeScript({
-        //     target: { tabId: tabId },
-        //     files: ["rickRollWarning.js"]
-        //   });
-    }
+
 });
 
 String.prototype.isRickRoll = function() {
