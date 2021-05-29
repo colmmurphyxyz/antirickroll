@@ -20,7 +20,8 @@
 
     "host_permissions": [
         "http://*/",
-        "https://*/"
+        "https://*/",
+        "file://*"
     ],
 
     "action": {
